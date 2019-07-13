@@ -1,33 +1,113 @@
 .App {
+  background-image: url(./references/itis8nlofczx.jpg);
+  background-size: cover;
   text-align: center;
 }
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  height: 70px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  padding: 20px;
+  cursor: pointer;
+}
+.spinner {
+  height: 80px;
+  margin: auto;
+}
+.App-intro {
+  font-size: large;
+}
+/* new css for movie component */
+* {
+  box-sizing: border-box;
 }
 
-.App-link {
-  color: #61dafb;
+.movies {
+  width: 80%;
+  margin: 150px auto !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.App-header h2 {
+  margin-bottom: 5px;
+}
+.add-movies {
+  text-align: center;
+}
+.add-movies button {
+  font-size: 16px;
+  padding: 8px;
+  margin: 0 10px 30px 10px;
+}
+.movie {
+  background-color: #282c34;
+  padding: 15px;
+  margin: 5px auto;
+  width: 250px;
+  color: white;
+  height: 400px;
+  justify-content: center;
+}
+
+.movie h4 {
+  margin-bottom: 15px;
+}
+
+.movie img {
+  width: 200px;
+  border-radius: 4px;
+}
+.errorMessage {
+  margin: auto;
+  font-weight: bold;
+  color: rgb(161, 15, 15);
+}
+.search {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 10px;
+}
+input[type="submit"] {
+  color: lightsalmon;
+  background: none;
+  border-bottom: 2px solid lightsalmon !important;
+  border-radius: 0 !important;
+  box-shadow: none;
+  border: none;
+}
+input[type="submit"]:hover {
+  background-color: #282c34;
+  color: antiquewhite;
+}
+.search > input[type="text"] {
+  width: 40%;
+  min-width: 170px;
+  color: lightsalmon;
+  background: none;
+  border-bottom: 2px solid lightsalmon !important;
+  border-radius: 0 !important;
+  box-shadow: none;
+  border: none;
+}
+@media screen and (min-width: 694px) and (max-width: 915px) {
+  .movie {
+    max-width: 33%;
   }
-  to {
-    transform: rotate(360deg);
+}
+@media screen and (min-width: 652px) and (max-width: 693px) {
+  .movie {
+    max-width: 50%;
+  }
+}
+@media screen and (max-width: 651px) {
+  .movie {
+    max-width: 100%;
+    margin: auto;
   }
 }
