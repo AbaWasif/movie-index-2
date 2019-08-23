@@ -1,7 +1,6 @@
 import React, { useReducer, useEffect } from "react";
 import "./App.css";
 
-import Header from "./components/Header";
 import Movie from "./components/Movie";
 import Search from "./components/Search";
 
@@ -59,11 +58,11 @@ const App = () => {
   return (
     <div className="App">
       {" "}
-      <Header text="The Index" /> <Search search={search} />{" "}
+      <Search search={search} />{" "}
       <div className="movies row">
         {" "}
         {loading && !errorMessage ? (
-          <span>loading... </span>
+          <span className>loading... </span>
         ) : errorMessage ? (
           <div className="errorMessage">{errorMessage}</div>
         ) : (

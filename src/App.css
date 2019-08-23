@@ -1,6 +1,9 @@
-.App {
+body {
   background-image: url(./references/itis8nlofczx.jpg);
   background-size: cover;
+}
+
+.App {
   text-align: center;
 }
 .App-header {
@@ -84,6 +87,12 @@ input[type="submit"] {
 input[type="submit"]:hover {
   background-color: #282c34;
   color: antiquewhite;
+}
+.search {
+  margin-top: 5%;
+}
+.search > input[type="text"]:focus {
+  outline: none;
 }
 .search > input[type="text"] {
   width: 40%;
